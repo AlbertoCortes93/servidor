@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
     res.send('Ocupar /Sopas para el catálogo');
 });
 
+// Retorna un array con objetos de sopa
 app.get('/sopas', (req, res) => {
     const sopas = [
         {
