@@ -26,7 +26,7 @@ app.get('/sopas', (req, res) => {
     res.json(sopas);
 });
 
-const port = 3003;
+const port = process.env.PORT || 3003;
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
 });
